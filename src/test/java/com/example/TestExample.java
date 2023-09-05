@@ -13,8 +13,8 @@ public class TestExample {
     @BeforeTest
     public void setup() {
         // Set the path to the ChromeDriver executable (update to your local path)
-        System.setProperty("webdriver.chrome.driver", "/home/ubuntu/google-chrome/chromedriver.exe");
-
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+       
         // Create a new instance of the ChromeDriver
         driver = new ChromeDriver();
     }
