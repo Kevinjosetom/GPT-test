@@ -12,6 +12,11 @@ public class TestExample {
 
     @BeforeTest
     public void setup() {
+
+	 ChromeOptions options = new ChromeOptions();
+         options.addArguments("--headless");
+         WebDriver driver = new ChromeDriver(options);
+   
         // Set the path to the ChromeDriver executable (update to your local path)
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
        
